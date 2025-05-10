@@ -1,0 +1,111 @@
+body {
+    background-color: silver;
+    margin:0;
+}
+
+header {
+    background-color: gray;
+    position: fixed;
+    width: 100%;
+}
+
+.navbar ul{
+    list-style-type: none;
+    background-color: darkgrey;
+    padding: 0px;
+    margin: 0px;
+    display:flex;
+}
+
+.navbar li{
+    width: 25%;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.navbar a:hover{
+    background-color: rgb(99, 99, 99);
+}
+
+main {
+    display: grid;
+    grid-row-gap: 10px;
+}
+
+.about {
+    margin: 50px;
+}
+
+.projects {
+    margin: 50px;
+}
+
+.education {
+    margin: 50px;
+}
+
+.contacts {
+    margin: 50px;
+}
+
+@media(max-width: 1100px) {
+    .image-container{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 100px;
+    }
+    
+    .image-container img{
+        object-fit: cover;
+        width: 500px;
+        height: 500px;
+        border-radius: 50%;
+        border-color:white;
+        border-width: 5px;
+        border-style: solid;
+    }
+}
+
+@media(min-width: 1100px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 200px 200px 200px;
+        grid-row-gap:10px;
+    }
+
+    .image-container{
+        margin-left: 0;
+        padding-left: 15%;
+        margin-top: 100px;
+    }
+    
+    .image-container img{
+        object-fit: cover;
+        width: 500px;
+        height: 500px;
+        border-radius: 50%;
+        border-color:white;
+        border-width: 5px;
+        border-style: solid;
+    }
+    .about {
+        grid-area: 1/2/1/2;
+
+    }
+
+    .projects{
+        grid-area: 2/2/2/2;
+    }
+
+    .education {
+        grid-area: 3/2/3/2;
+    }
+
+
+}

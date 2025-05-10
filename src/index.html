@@ -4,33 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a>About</a></li>
-            <li><a>Projects</a></li>
-            <li><a>Contacts</a></li>
-        </ul>
-    </nav>
-    <img src="images/img.jpeg" alt="Profile picture">
-    <div class="about">
-        <h3>About</h3>
-        <p>Pargraph with diography</p>
-    </div>
-    <div class="projects">
-        <h3>Projects</h3>
-        <p>Pargraph with my expirience and pet projects</p>
-    </div>
-    <div class="contacts">
-        <h3>Contacts</h3>
-        <ul>
-            <li>Phone</li>
-            <li>Linkedin</li>
-            <li>Github</li>
-            <li>Telegram</li>
-            <li>Email</li>
-        </ul>
-    </div>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Education">Education</a></li>
+                <li><a href="#Contacts">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="image-container">
+            <img src="/images/img.jpeg" alt="Profile picture">
+            <h3>Sharov Daniil</h3>
+        </div>
+        <div class="about">
+            <h3 id="About">About</h3>
+            <p>I am first year student in computer science field, interested in IT, have no comercial expirience but ready for challanges and improving my skills.</p>
+        </div>
+        <div class="projects">
+            <h3 id="Projects">Projects</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, quidem corrupti? Ea eveniet nobis saepe placeat aut culpa veritatis quos nemo eius dolore delectus soluta, nesciunt laudantium optio minima facilis.</p>
+        </div>
+        <div class="education">
+            <h3 id="Education">Education</h3>
+            <ul>
+                <li>Kyiv Politehnic institut, Bachelor | September 2024, June 2028, Studying programming language C/C++, data structures, algorithm's, ML and Artificial intelligence.</li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <div class="contacts">
+            <h3 id="Contacts">Contacts</h3>
+            <ul>
+                <li><a href="tel:+38(096) 983 79 61" target="_blank">Phone</a></li>
+                <li><a href="https://www.linkedin.com/in/даниил-шаров-8b9187293/" target="_blank">Linkedin</a></li>
+                <li><a href="https://github.com/daniil54sharov" target="_blank">Github</a></li>
+                <li><a href="https://t.me/Sharov92" target="_blank">Telegram</a></li>
+                <li><a href="mailto:daniilsharov54@gmail.com" target="_blank">Email</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
